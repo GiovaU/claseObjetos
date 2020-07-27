@@ -119,18 +119,24 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"tareaObjetos.js":[function(require,module,exports) {
 var harold = {
-  nombre: 'Harold',
+  nombre: 'Harold Alirio',
   apellido: 'Sanchez',
   edad: 32,
-  sexo: 'Masculino'
+  sexo: 'Macho Beta'
 };
 var korben = {
-  nombre: 'Korben',
-  apellido: 'Sanchez',
+  nombre: 'Korben Alirio',
+  apellido: 'Sanchez Urrego',
   edad: 4,
   sexo: 'Macho alfa'
 };
-var miArray = [harold, korben];
+var giova = {
+  nombre: 'Giovanna',
+  apellido: 'Urrego',
+  edad: 36,
+  sexo: 'Femenino'
+};
+var miArray = [harold, korben, giova];
 
 for (var i = 0; i < miArray.length; i++) {
   console.log("Persona ".concat(i + 1));
@@ -164,7 +170,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59525" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60598" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
